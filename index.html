@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chill Lounge – кальянная у метро Щёлковская</title>
+<meta name="description" content="Chill Lounge: кальяны от 1 500 ₽, VIP-комната с караоке и PS5, пицца, лимонады и пиво. 500 м от м. Щёлковская, Уральская ул., 6к1. +7 (925) 637-07-88">
+<meta name="theme-color" content="#151515">
+<meta property="og:title" content="Chill Lounge – кальянная у Щёлковской">
+<meta property="og:description" content="Кальяны, VIP-комната с караоке и PS5, пицца и лимонады. Уральская ул., 6к1">
+<meta property="og:image" content="img/c030.webp">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Nunito+Sans:wght@400;600;700&family=Caveat+Brush&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>
+  document.documentElement.className += ' js';
+  try { if (localStorage.getItem('chill-age') === 'yes') document.documentElement.className += ' age-ok'; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarOrPub",
+  "name": "Chill Lounge",
+  "telephone": "+79256370788",
+  "address": {"@type": "PostalAddress", "streetAddress": "Уральская ул., 6, корп. 1", "addressLocality": "Москва", "addressCountry": "RU"},
+  "geo": {"@type": "GeoCoordinates", "latitude": 55.815122, "longitude": 37.799318},
+  "openingHours": ["Mo-Th 12:00-01:00", "Fr-Sa 12:00-03:00", "Su 12:00-01:00"],
+  "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.8", "ratingCount": "256"}
+}
+</script>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="leaf" viewBox="0 0 60 40"><path d="M2 30C10 8 34 -2 58 6 50 28 24 42 2 30z" fill="#7fb24a"/><path d="M6 29C20 22 36 14 54 8" fill="none" stroke="#5a8a31" stroke-width="1.6"/></symbol>
+</svg>
+
+<div class="age" id="age" role="dialog" aria-modal="true" aria-labelledby="ageTitle">
+  <div class="age__box">
+    <img src="img/logo.png" alt="Chill Lounge" class="age__logo" width="640" height="640">
+    <div id="ageAsk">
+      <p class="age__title" id="ageTitle">Вам уже есть 18?</p>
+      <p class="age__text">На&nbsp;сайте есть информация о&nbsp;кальянах и&nbsp;алкоголе, поэтому он&nbsp;только для взрослых гостей.</p>
+      <div class="age__btns">
+        <button type="button" class="btn btn--orange" id="ageYes">Да, мне есть 18</button>
+        <button type="button" class="btn btn--line" id="ageNo">Нет</button>
+      </div>
+    </div>
+    <div id="ageDeny" hidden>
+      <p class="age__title">Будем ждать вас позже</p>
+      <p class="age__text">К&nbsp;сожалению, сайт доступен только совершеннолетним.</p>
+    </div>
+  </div>
+</div>
+
+<header class="top">
+  <div class="top__in">
+    <a href="#top" class="top__logo"><img src="img/logo.png" alt="" width="40" height="40"><span>Chill Lounge</span></a>
+    <nav class="nav" id="nav" aria-label="Разделы">
+      <a href="#hookah">Кальяны</a>
+      <a href="#vip">VIP-комната</a>
+      <a href="#menu">Меню</a>
+      <a href="#deals">Акции</a>
+      <a href="#contacts">Контакты</a>
+      <a href="tel:+79256370788" class="nav__phone">+7 (925) 637-07-88</a>
+    </nav>
+    <a href="tel:+79256370788" class="btn btn--orange btn--sm top__cta">Забронировать</a>
+    <button class="burger" id="burger" aria-label="Меню навигации" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="smoke" aria-hidden="true"><i></i><i></i><i></i></div>
+  <svg class="leaf leaf--1" aria-hidden="true"><use href="#leaf"/></svg>
+  <svg class="leaf leaf--2" aria-hidden="true"><use href="#leaf"/></svg>
+  <div class="wrap hero__in">
+    <div class="hero__text">
+      <p class="status" id="status">м. Щёлковская · 500 м</p>
+      <h1 class="hero__title">Время <span>расслабиться</span></h1>
+      <p class="hand">и&nbsp;ничего не&nbsp;решать</p>
+      <p class="hero__lead">Кальян, большой чайник чая и&nbsp;плойка в&nbsp;отдельной комнате. Уютный подвальчик у&nbsp;Щёлковской, где никто не&nbsp;торопит.</p>
+      <div class="hero__actions">
+        <a href="tel:+79256370788" class="btn btn--orange">Забронировать стол</a>
+        <a href="#menu" class="btn btn--line">Меню</a>
+      </div>
+      <a class="rating" href="https://yandex.ru/maps/org/chill_lounge/64143077151/reviews/" target="_blank" rel="noopener"><b>4,8</b><span>★★★★★</span><span>256 оценок на&nbsp;Яндекс Картах</span></a>
+    </div>
+    <div class="hero__visual">
+      <figure class="hero__photo"><img src="img/c030.webp" alt="Зал Chill Lounge: гирлянды, зелень и фиолетовые диваны" fetchpriority="high"></figure>
+      <img class="hero__badge" src="img/logo.png" alt="Chill Lounge" width="640" height="640">
+    </div>
+  </div>
+</section>
+
+<!-- DEAL strip -->
+<section class="strip">
+  <div class="wrap strip__in">
+    <p><b>По&nbsp;будням до&nbsp;18:00</b> кальян на&nbsp;чаше + чай за&nbsp;1&#8239;200&nbsp;₽</p>
+    <a href="#deals">Все акции&nbsp;→</a>
+  </div>
+</section>
+
+<!-- HOOKAH -->
+<section class="hookah" id="hookah">
+  <div class="wrap">
+    <div class="head reveal">
+      <p class="label">Кальяны</p>
+      <h2 class="h2">Густо, вкусно, <span>без спешки</span></h2>
+      <p class="lead">Большой выбор табака и&nbsp;мастера, которые подскажут микс под настроение.</p>
+    </div>
+    <div class="board reveal">
+      <ul class="hk">
+        <li><div><b>Классический на&nbsp;чаше</b></div><i></i><em>1&#8239;500&nbsp;₽</em></li>
+        <li><div><b>Премиум на&nbsp;чаше</b></div><i></i><em>1&#8239;700&nbsp;₽</em></li>
+        <li><div><b>На&nbsp;фруктовой чаше</b><span>яркий вкус и&nbsp;аромат фрукта</span></div><i></i><em>+500&nbsp;₽</em></li>
+        <li><div><b>Вино или ром в&nbsp;колбу</b><span>вино к&nbsp;ягодным миксам, ром к&nbsp;свежим</span></div><i></i><em>+500&nbsp;₽</em></li>
+      </ul>
+      <div class="board__side">
+        <figure><img src="img/c021.webp" alt="Кальян на фоне синей подсветки бара" loading="lazy"></figure>
+        <p class="promise"><span class="hand hand--sm">если не&nbsp;зашёл</span>Мастер поменяет кальян в&nbsp;первые 10&nbsp;минут после выноса.</p>
+      </div>
+    </div>
+    <p class="hookah__note reveal">Один кальян на&nbsp;1–3 гостей. На&nbsp;компанию от&nbsp;четырёх берут два.</p>
+  </div>
+</section>
+
+<!-- VIP -->
+<section class="vip" id="vip">
+  <div class="wrap vip__grid">
+    <figure class="vip__pic reveal"><img src="img/c033.webp" alt="Зал с кирпичной стеной, диванами и телевизором" loading="lazy"></figure>
+    <div class="reveal">
+      <p class="label">VIP-комната</p>
+      <h2 class="h2">Караоке <span>и&nbsp;PS5</span></h2>
+      <p class="lead">Отдельная комната для своей компании: поём, играем на&nbsp;PlayStation&nbsp;5 и&nbsp;смотрим матчи на&nbsp;большом экране.</p>
+      <div class="price-cards">
+        <div class="pc"><b>1&#8239;000&nbsp;₽</b><span>в&nbsp;час</span></div>
+        <div class="pc pc--hot"><b>500&nbsp;₽</b><span>в&nbsp;час при заказе кальяна</span></div>
+      </div>
+      <p class="vip__note">Аренда от&nbsp;5 часов – скидка 10% для участников программы лояльности. Подходит для дня рождения, корпоратива и&nbsp;деловой встречи.</p>
+    </div>
+  </div>
+</section>
+
+<!-- MENU -->
+<section class="menu" id="menu">
+  <div class="wrap">
+    <div class="head reveal">
+      <p class="label">Меню</p>
+      <h2 class="h2">Чай, лимонады <span>и&nbsp;пицца</span></h2>
+    </div>
+    <div class="tabs" role="tablist" aria-label="Разделы меню">
+      <button role="tab" class="tab is-active" aria-selected="true" data-tab="tea">Чай и&nbsp;кофе</button>
+      <button role="tab" class="tab" aria-selected="false" data-tab="cold">Лимонады</button>
+      <button role="tab" class="tab" aria-selected="false" data-tab="beer">Пиво и&nbsp;сидр</button>
+      <button role="tab" class="tab" aria-selected="false" data-tab="food">Пицца и&nbsp;снеки</button>
+    </div>
+    <div class="menu__body" id="menuBody" aria-live="polite"></div>
+    <p class="menu__note">Можно со&nbsp;своим: пробковый сбор 300&nbsp;₽ за&nbsp;бутылку крепкого или вина, 100&nbsp;₽ за&nbsp;слабоалкогольные и&nbsp;безалкогольные напитки.</p>
+  </div>
+</section>
+
+<!-- DEALS -->
+<section class="deals" id="deals">
+  <div class="wrap">
+    <div class="head reveal">
+      <p class="label">Акции</p>
+      <h2 class="h2">Выгоднее <span>со&nbsp;своими</span></h2>
+      <p class="lead">Для участников программы лояльности. Зарегистрироваться можно у&nbsp;сотрудников прямо в&nbsp;зале.</p>
+    </div>
+    <div class="deal-grid">
+      <article class="deal reveal"><b>1&#8239;200&nbsp;₽</b><p>Кальян на&nbsp;чаше + чай по&nbsp;будням до&nbsp;18:00</p></article>
+      <article class="deal reveal"><b>−40%</b><p>На&nbsp;второй кальян при заказе двух сразу</p></article>
+      <article class="deal reveal"><b>950&nbsp;₽</b><p>Пицца + литровый лимонад</p></article>
+      <article class="deal reveal"><b>1+1=3</b><p>Две пиццы, и&nbsp;лимонад или «Маргарита» в&nbsp;подарок</p></article>
+      <article class="deal reveal"><b>−10%</b><p>В&nbsp;день рождения, 5&nbsp;дней до&nbsp;и&nbsp;5&nbsp;дней после</p></article>
+      <article class="deal reveal"><b>1 час PS</b><p>В&nbsp;подарок при заказе от&nbsp;2&#8239;000&nbsp;₽</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- PLACE -->
+<section class="place">
+  <div class="wrap">
+    <div class="gal">
+      <figure class="g g--1 reveal"><img src="img/c005.webp" alt="Диван у стены с гирляндой" loading="lazy"></figure>
+      <figure class="g g--2 reveal"><img src="img/c034.webp" alt="Зал с зеленью и телевизором" loading="lazy"></figure>
+      <figure class="g g--3 reveal"><img src="img/c040.webp" alt="Барная стойка с круглым логотипом Chill Lounge" loading="lazy"></figure>
+      <figure class="g g--4 reveal"><img src="img/c001.webp" alt="Чай и кальян на столе" loading="lazy"></figure>
+    </div>
+    <ul class="perks">
+      <li class="reveal"><b>Настолки</b>много игр на&nbsp;любую компанию</li>
+      <li class="reveal"><b>Матчи</b>трансляции на&nbsp;большом телевизоре</li>
+      <li class="reveal"><b>С&nbsp;собакой</b>можно, если до&nbsp;35&nbsp;см в&nbsp;холке</li>
+      <li class="reveal"><b>Wi-Fi</b>и&nbsp;место для ноутбука</li>
+    </ul>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="reviews__head reveal">
+      <div>
+        <p class="label">Отзывы</p>
+        <h2 class="h2">Возвращаются <span>снова</span></h2>
+      </div>
+      <div class="score"><b>4,8</b><span>★★★★★<br>162 отзыва · 256 оценок<br>на&nbsp;Яндекс Картах</span></div>
+    </div>
+    <div class="quotes">
+      <figure class="q q--big reveal">
+        <blockquote>Народу немного, уютно, отдельная комната с&nbsp;PS5, большой выбор табака и&nbsp;прекрасный специалист, который поможет выбрать самый вкусный кальян.</blockquote>
+        <figcaption><b>Гость</b><span>Яндекс Карты · 19 декабря 2025</span></figcaption>
+      </figure>
+      <figure class="q reveal">
+        <blockquote>Кальян чистейший, вкус яркий и&nbsp;насыщенный. Уютная атмосфера, приятная музыка.</blockquote>
+        <figcaption><b>Гость</b><span>Яндекс Карты · 16 ноября 2025</span></figcaption>
+      </figure>
+      <figure class="q reveal">
+        <blockquote>Много настольных игр, кальяны забивают очень хорошо, есть вкусная пицца и&nbsp;хороший ассортимент закусок.</blockquote>
+        <figcaption><b>Гость</b><span>Яндекс Карты · 10 июля</span></figcaption>
+      </figure>
+      <figure class="q reveal">
+        <blockquote>Чисто, уютно и&nbsp;приятно. Можно классно провести вечер, попить вкусных лимонадов и&nbsp;перекусить.</blockquote>
+        <figcaption><b>Гость</b><span>Яндекс Карты · 30 мая 2025</span></figcaption>
+      </figure>
+    </div>
+    <a class="more" href="https://yandex.ru/maps/org/chill_lounge/64143077151/reviews/" target="_blank" rel="noopener">Все отзывы на&nbsp;Яндекс Картах&nbsp;→</a>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section class="contacts" id="contacts">
+  <div class="wrap contacts__grid">
+    <div class="reveal">
+      <p class="label">Контакты</p>
+      <h2 class="h2">Ждём <span>на&nbsp;Уральской</span></h2>
+      <dl class="info">
+        <div><dt>Адрес</dt><dd>Москва, Уральская ул., 6, корп. 1<span class="sub">боковой вход, цокольный этаж · м. Щёлковская, 500 м</span></dd></div>
+        <div><dt>Бронь</dt><dd><a href="tel:+79256370788">+7 (925) 637-07-88</a></dd></div>
+        <div><dt>Управляющий</dt><dd><a href="tel:+79379750017">+7 (937) 975-00-17</a></dd></div>
+        <div><dt>Оплата</dt><dd>Карта, наличные, перевод</dd></div>
+      </dl>
+      <ul class="week" id="week" aria-label="Часы работы"></ul>
+      <div class="contacts__actions">
+        <a href="tel:+79256370788" class="btn btn--orange">Позвонить</a>
+        <a href="https://t.me/chill_loungebar" target="_blank" rel="noopener" class="btn btn--line">Telegram</a>
+        <a href="https://yandex.ru/maps/org/chill_lounge/64143077151/" target="_blank" rel="noopener" class="btn btn--line">Маршрут</a>
+      </div>
+      <figure class="find">
+        <img src="img/c042.webp" alt="Боковой вход в цокольный этаж" loading="lazy">
+        <figcaption>Вход сбоку здания, спускаетесь в&nbsp;цокольный этаж. Рядом бесплатная парковка.</figcaption>
+      </figure>
+    </div>
+    <div class="map reveal">
+      <iframe title="Chill Lounge на Яндекс Картах" src="https://yandex.ru/map-widget/v1/?ll=37.799318%2C55.815122&z=16&pt=37.799318%2C55.815122%2Cpm2orl" loading="lazy" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__in">
+    <img src="img/logo.png" alt="Chill Lounge" class="footer__logo" loading="lazy">
+    <nav class="footer__nav" aria-label="Разделы">
+      <a href="#hookah">Кальяны</a><a href="#vip">VIP-комната</a><a href="#menu">Меню</a><a href="#deals">Акции</a><a href="#contacts">Контакты</a>
+    </nav>
+    <div class="footer__meta">
+      <a href="tel:+79256370788">+7 (925) 637-07-88</a>
+      <span>Уральская ул., 6к1 · м. Щёлковская</span>
+    </div>
+  </div>
+  <div class="wrap footer__legal">
+    <span>© Chill Lounge</span>
+    <span>18+ · Информация на&nbsp;сайте носит справочный характер и&nbsp;не&nbsp;является рекламой. Чрезмерное употребление алкоголя вредит вашему здоровью.</span>
+  </div>
+</footer>
+
+<div class="dock" aria-label="Быстрые действия">
+  <a href="tel:+79256370788">Позвонить</a>
+  <a href="#menu">Меню</a>
+  <a href="https://yandex.ru/maps/org/chill_lounge/64143077151/" target="_blank" rel="noopener">Маршрут</a>
+</div>
+
+<script src="menu.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
